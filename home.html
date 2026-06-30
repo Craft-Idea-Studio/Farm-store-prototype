@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>FARMVY | Online Farm Store</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<script src="tailwind-config.js"></script>
+<link rel="stylesheet" href="styles.css"/>
+</head>
+<body class="bg-surface text-on-surface font-body-md overflow-x-hidden">
+<!-- TopNavBar -->
+<header class="bg-secondary fixed top-0 w-full z-50 rounded-b-lg shadow-[0px_4px_20px_rgba(27,67,50,0.08)] border-b border-white/10 h-20">
+<div class="flex justify-between items-center h-full px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="flex items-center gap-8">
+<a class="font-headline-md text-headline-md font-black tracking-tighter text-on-secondary" href="home.html">FARMVY</a>
+<nav class="hidden md:flex gap-6 items-center">
+<a class="font-label-lg text-label-lg text-on-secondary font-bold border-b-2 border-on-secondary pb-1" href="home.html">Home</a>
+<a class="font-label-lg text-label-lg text-on-secondary/80 hover:text-on-secondary transition-colors hover:scale-105 transition-all duration-300" href="shop.html">Shop</a>
+<a class="font-label-lg text-label-lg text-on-secondary/80 hover:text-on-secondary transition-colors hover:scale-105 transition-all duration-300" href="product.html">Product</a>
+<a class="font-label-lg text-label-lg text-on-secondary/80 hover:text-on-secondary transition-colors hover:scale-105 transition-all duration-300" href="about.html">About</a>
+<a class="font-label-lg text-label-lg text-on-secondary/80 hover:text-on-secondary transition-colors hover:scale-105 transition-all duration-300" href="contact.html">Contact</a>
+<a class="font-label-lg text-label-lg text-on-secondary/80 hover:text-on-secondary transition-colors hover:scale-105 transition-all duration-300" href="prototype.html">Prototype</a>
+</nav>
+</div>
+<div class="flex items-center gap-4">
+<div class="relative hidden sm:block">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-on-secondary/50">search</span>
+<input class="pl-12 pr-6 py-2 bg-white/10 rounded-full border border-white/20 focus:ring-2 focus:ring-on-secondary/50 w-64 text-body-md text-on-secondary placeholder:text-on-secondary/50 transition-all" placeholder="Search supplies..." type="text"/>
+</div>
+<div class="flex gap-2">
+<a href="checkout.html" class="p-2 inline-flex text-on-secondary/80 hover:bg-white/10 rounded-full transition-all duration-300 hover:scale-105">
+<span class="material-symbols-outlined" data-icon="shopping_cart">shopping_cart</span>
+</a>
+<button class="p-2 text-on-secondary/80 hover:bg-white/10 rounded-full transition-all duration-300 hover:scale-105">
+<span class="material-symbols-outlined" data-icon="account_circle">account_circle</span>
+</button>
+</div>
+</div>
+</div>
+</header>
+<main class="pt-20 pb-16 md:pb-0">
+<!-- Hero Section -->
+<section class="relative min-h-[85vh] flex items-center overflow-hidden px-margin-mobile md:px-margin-desktop">
+<div class="absolute inset-0 z-0">
+<div class="absolute inset-0 bg-gradient-to-r from-surface via-surface/80 to-transparent z-10"></div>
+<img alt="Farmland background" class="w-full h-full object-cover opacity-80" data-alt="A sun-drenched, sprawling green farmland landscape at golden hour with a classic red barn and rolling hills in the background. The lighting is warm and natural, evoking a sense of peaceful agricultural abundance and rural charm. The sky is a clear, vibrant blue with soft, wispy white clouds scattered across the horizon." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAT0xxKa7o-IZ7ltew_pgcJz__F9TUWyb0-VCmh6HGMGbgNv_agCXFsS0rbZXIpL7SQLcT6iKrUBAmMv-yOdtXVzX_CcGNhA_aC8ieMOKmQDNitpj_1CLP9MUXbV9PyB3icm3YNjODXizvg7pnKcfLMu35xl6Ru9wlFEEFY-mPSXQQUGQF0hcBenGV4GR3Oi1c9S77KpoEcALRAAliPrxfNXIZiPK2XwQxj_Cd4q4BsS6TnDjN0gjVFQbMgX3di0fdq6lA5mX8fW6o"/>
+</div>
+<div class="relative z-20 max-w-container-max mx-auto w-full grid md:grid-cols-2 items-center gap-stack-lg">
+<div class="space-y-stack-md text-center md:text-left">
+<span class="inline-block px-4 py-1.5 bg-secondary-container text-on-secondary-container rounded-full text-label-lg font-bold">EST. 2024</span>
+<h1 class="font-headline-lg-mobile md:font-headline-xl text-headline-lg-mobile md:text-headline-xl text-primary max-w-xl leading-tight">
+                        Your One-Stop <br/><span class="text-secondary">Farm Supply</span> Store
+                    </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-lg mx-auto md:mx-0">
+                        From premium organic feed to professional-grade tools, we provide everything you need to grow a healthier farm and a better harvest.
+                    </p>
+<div class="flex flex-col sm:flex-row gap-4 pt-4 justify-center md:justify-start">
+<a href="shop.html" class="squishy-button px-8 py-4 bg-gradient-to-b from-secondary to-primary text-on-primary rounded-full font-bold shadow-lg shadow-primary/20 flex items-center justify-center gap-2">
+                            Shop Now
+                            <span class="material-symbols-outlined">arrow_forward</span>
+</a>
+<a href="shop.html" class="squishy-button px-8 py-4 bg-tertiary-fixed text-on-tertiary-fixed-variant rounded-full font-bold border-2 border-transparent hover:border-tertiary-fixed-dim transition-all flex items-center justify-center gap-2">
+                            Browse Categories
+                        </a>
+</div>
+</div>
+<div class="flex justify-center md:justify-end animate-bounce-subtle">
+<div class="relative w-full max-w-md">
+<div class="absolute inset-0 bg-primary/5 blur-3xl rounded-full scale-125"></div>
+<img alt="Mascot Cow Farmer" class="w-full h-auto relative z-10 drop-shadow-2xl" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBUbPEA3vQFQ2eMO_BjYhtXF45cTcxWFHc__TjlrOEKF8GN-SrgH4ouh1Or6axosIlPl5hrwlHr345sLlW0AdyfshFFmnocO_GapordyWURuzr3nXHehpXhTwsrWSUkwb1qs5mAOlcG64aslzIqYJHBNQBLiaL-slLuOPrenT1LQGX96rBBKdyhYFz9Fy24d_STHltY3nbQ7EBf4i2oOCsilKhDZbA4ZQUTdBJL_kbQtJ3cg3FTyhRbYlaaQX0SHM1MYb-OZBVDskE"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Category Section -->
+<section class="py-24 bg-white/50">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop text-center">
+<h2 class="font-headline-lg text-headline-lg text-primary mb-12">Popular Departments</h2>
+<div class="grid grid-cols-2 md:grid-cols-5 gap-stack-lg">
+<!-- Category 1 -->
+<a class="group flex flex-col items-center gap-4 transition-transform hover:-translate-y-2" href="shop.html">
+<div class="w-24 h-24 md:w-32 md:h-32 rounded-full bg-surface-container flex items-center justify-center border-4 border-transparent group-hover:border-primary transition-all shadow-md">
+<span class="material-symbols-outlined text-4xl md:text-5xl text-primary" data-icon="egg">egg</span>
+</div>
+<span class="font-label-lg text-label-lg font-bold text-on-surface">Animal Feed</span>
+</a>
+<a class="group flex flex-col items-center gap-4 transition-transform hover:-translate-y-2" href="shop.html">
+<div class="w-24 h-24 md:w-32 md:h-32 rounded-full bg-surface-container flex items-center justify-center border-4 border-transparent group-hover:border-primary transition-all shadow-md">
+<span class="material-symbols-outlined text-4xl md:text-5xl text-primary" data-icon="potted_plant">potted_plant</span>
+</div>
+<span class="font-label-lg text-label-lg font-bold text-on-surface">Seedlings</span>
+</a>
+<a class="group flex flex-col items-center gap-4 transition-transform hover:-translate-y-2" href="shop.html">
+<div class="w-24 h-24 md:w-32 md:h-32 rounded-full bg-surface-container flex items-center justify-center border-4 border-secondary transition-all shadow-md ring-4 ring-secondary/20">
+<span class="material-symbols-outlined text-4xl md:text-5xl text-primary" data-icon="eco">eco</span>
+</div>
+<span class="font-label-lg text-label-lg font-bold text-on-surface">Fertilizer</span>
+</a>
+<a class="group flex flex-col items-center gap-4 transition-transform hover:-translate-y-2" href="shop.html">
+<div class="w-24 h-24 md:w-32 md:h-32 rounded-full bg-surface-container flex items-center justify-center border-4 border-transparent group-hover:border-primary transition-all shadow-md">
+<span class="material-symbols-outlined text-4xl md:text-5xl text-primary" data-icon="construction">construction</span>
+</div>
+<span class="font-label-lg text-label-lg font-bold text-on-surface">Farm Tools</span>
+</a>
+<a class="group flex flex-col items-center gap-4 transition-transform hover:-translate-y-2" href="shop.html">
+<div class="w-24 h-24 md:w-32 md:h-32 rounded-full bg-surface-container flex items-center justify-center border-4 border-transparent group-hover:border-primary transition-all shadow-md">
+<span class="material-symbols-outlined text-4xl md:text-5xl text-primary" data-icon="phishing">phishing</span>
+</div>
+<span class="font-label-lg text-label-lg font-bold text-on-surface">Fishing Equip.</span>
+</a>
+</div>
+</div>
+</section>
+<!-- Featured Products -->
+<section class="py-24 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-4">
+<div>
+<h2 class="font-headline-lg text-headline-lg text-primary">Featured Supplies</h2>
+<p class="text-on-surface-variant">Top-rated essentials for your homestead.</p>
+</div>
+<a class="text-secondary font-bold flex items-center gap-2 hover:underline" href="shop.html">
+                    View All Products
+                    <span class="material-symbols-outlined">chevron_right</span>
+</a>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-gutter">
+<!-- Product Card 1 -->
+<div class="product-card-hover group bg-white rounded-lg p-4 shadow-[0px_4px_20px_rgba(27,67,50,0.08)] border border-surface-container-high transition-all hover:-translate-y-2">
+<div class="relative aspect-square overflow-hidden rounded-lg bg-surface mb-4">
+<span class="absolute top-2 left-2 z-10 px-3 py-1 bg-tertiary-fixed text-on-tertiary-fixed text-label-sm rounded-full">Organic</span>
+<img alt="Premium Chicken Feed" class="product-image w-full h-full object-cover transition-transform duration-500" data-alt="A large, rustic burlap sack filled with high-quality organic chicken feed, overflowing slightly to show golden grains and corn. The lighting is soft and studio-quality, highlighting the natural texture of the fabric and the seeds. The background is a clean, creamy white, following a modern e-commerce product photography style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCCuQRdOMbByQcMP129z2EFKr9EXsym9cckeVMKJHtmBd1UQ9WvF00ZIKeWCNDV_6y1d1bF_t2J3xJqBJQVRYQmQ6ERxEIPPTsN7UfE6am7kSgVtEHGk0qxUdwpZF5DYoa8Oax3W6MfOItdG__veSnCbNJBOWM0cFuFUtZ44wIFFMg2Lc2rHp5IhplBhzIa48F04DNsEFlZuBef-DoVOx-rBqin4Le1Wtgkz6v2GjnSwEu5Bue5uvcqHHRYk3ylSOW1T6slS80MlV0"/>
+<a href="product.html" class="absolute bottom-3 right-3 p-3 bg-secondary text-white rounded-full opacity-0 group-hover:opacity-100 transition-opacity shadow-lg inline-flex">
+<span class="material-symbols-outlined">add_shopping_cart</span>
+</a>
+</div>
+<div class="space-y-1">
+<p class="text-label-sm text-outline uppercase tracking-wider">Feed &amp; Nutrition</p>
+<a href="product.html" class="font-headline-md text-primary truncate block">Premium Layer Feed (25kg)</a>
+<div class="flex items-center gap-1 text-on-tertiary-container mb-2">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="text-label-sm">4.9 (124 reviews)</span>
+</div>
+<p class="text-headline-md font-extrabold text-primary">$45.00</p>
+</div>
+</div>
+<!-- Product Card 2 -->
+<div class="product-card-hover group bg-white rounded-lg p-4 shadow-[0px_4px_20px_rgba(27,67,50,0.08)] border border-surface-container-high transition-all hover:-translate-y-2">
+<div class="relative aspect-square overflow-hidden rounded-lg bg-surface mb-4">
+<span class="absolute top-2 left-2 z-10 px-3 py-1 bg-secondary-container text-on-secondary-container text-label-sm rounded-full">In Stock</span>
+<img alt="Vegetable Starts" class="product-image w-full h-full object-cover transition-transform duration-500" data-alt="A vibrant collection of young vegetable starts in black plastic nursery trays, including healthy green lettuce, tomatoes, and peppers. The leaves are glistening with morning dew drops under soft, natural daylight. The composition is a high-angle close-up, emphasizing growth and vitality within a clean, modern agricultural aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDqcsgUvL6Gg4AVfLgctvg-tO6zG0tS6-C0lcM3KgPQTUvZrVUCaEgd7U0liSQwtfUtmL77cN1zPf4rbEziSnF7l2El5AZnsanFodZl2ehXVKKl-1kz-zmyrYCxpcfeETZrMlfJKvaVHB9_JKjsG2WY6GozHOtAZhNrKPdn3dQq7vDFRnk6UhOccumzvpWL6wV2qaSb_36EamYRvuMtnC5FpGH3I0hyJ4A8RYXX7SfYWqL9rYc1fTuwbqrvT-iZQRbykOWNcohii8g"/>
+<a href="product.html" class="absolute bottom-3 right-3 p-3 bg-secondary text-white rounded-full opacity-0 group-hover:opacity-100 transition-opacity shadow-lg inline-flex">
+<span class="material-symbols-outlined">add_shopping_cart</span>
+</a>
+</div>
+<div class="space-y-1">
+<p class="text-label-sm text-outline uppercase tracking-wider">Plants &amp; Seeds</p>
+<a href="product.html" class="font-headline-md text-primary truncate block">Heirloom Tomato Pack (6ct)</a>
+<div class="flex items-center gap-1 text-on-tertiary-container mb-2">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="text-label-sm">5.0 (89 reviews)</span>
+</div>
+<p class="text-headline-md font-extrabold text-primary">$12.50</p>
+</div>
+</div>
+<!-- Product Card 3 -->
+<div class="product-card-hover group bg-white rounded-lg p-4 shadow-[0px_4px_20px_rgba(27,67,50,0.08)] border border-surface-container-high transition-all hover:-translate-y-2">
+<div class="relative aspect-square overflow-hidden rounded-lg bg-surface mb-4">
+<span class="absolute top-2 left-2 z-10 px-3 py-1 bg-error-container text-on-error-container text-label-sm rounded-full">Sale -20%</span>
+<img alt="Hand Tool Set" class="product-image w-full h-full object-cover transition-transform duration-500" data-alt="A set of heavy-duty, professional-grade garden hand tools including a steel trowel and hand fork with ergonomic wooden handles. They are displayed on a weathered but clean light wood surface, arranged neatly with a minimalist aesthetic. The lighting is bright and airy, creating soft shadows that give the tools a tactile, high-quality feel." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBifmiFtrpBwkijSEpDlM6rxShqXTkOsVXVOSRVWdy2N0qhZEmjAaKb_B6SQ0aBj2dNrM7TzSMcf6D1IdpCwTWB37f6NYXXo7C6WHwZY-kNx-KDZiFqJz8bdMwj2oGXIkluvxybztLsXuKM_TaPmwZWyoPBjPEWeJ6ZxTaWkqjAv3SoFr3efWZx-1fjo9-vkXdF5BWi7jnFUFs3ZslFJ7ZF9Q8qhOMDPLuGgiR8c6DqIl7XjpbfyOAiGH_zRUSSF4x4n6c23gKeDKA"/>
+<a href="product.html" class="absolute bottom-3 right-3 p-3 bg-secondary text-white rounded-full opacity-0 group-hover:opacity-100 transition-opacity shadow-lg inline-flex">
+<span class="material-symbols-outlined">add_shopping_cart</span>
+</a>
+</div>
+<div class="space-y-1">
+<p class="text-label-sm text-outline uppercase tracking-wider">Tools &amp; Hardware</p>
+<a href="product.html" class="font-headline-md text-primary truncate block">Durable Steel Trowel</a>
+<div class="flex items-center gap-1 text-on-tertiary-container mb-2">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="text-label-sm">4.7 (56 reviews)</span>
+</div>
+<p class="text-headline-md font-extrabold text-primary">$18.00 <span class="text-label-sm line-through text-outline ml-2">$22.50</span></p>
+</div>
+</div>
+<!-- Product Card 4 -->
+<div class="product-card-hover group bg-white rounded-lg p-4 shadow-[0px_4px_20px_rgba(27,67,50,0.08)] border border-surface-container-high transition-all hover:-translate-y-2">
+<div class="relative aspect-square overflow-hidden rounded-lg bg-surface mb-4">
+<img alt="Potting Soil" class="product-image w-full h-full object-cover transition-transform duration-500" data-alt="A close-up shot of rich, dark organic compost potting soil with visible bits of organic matter and pearlite, being held in a pair of clean gloved hands. The focus is sharp on the texture of the soil, showing its moist and fertile nature. The lighting is bright and high-key, emphasizing the health and quality of the growing medium." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCLXnJecvAy-V-D3RmKxVB9vAqUiQnud6LUOFOgLmsMLY5S6L7yWcWX4qYyF7i2osdQv0vWW40qLlpF__ffshOGYBH3ax3E71E44ugrzL7PaQCDnBCSNal1FOcLDbP_xf5ncPtOplq-Dhx97s36epQAjG1BOgem-Pj1R8tsDazrolnUF9wIHr3jqYht2QMHfPni43-kc6QACPDGwTJG6POwXlRXsYO3w8HIeHumAZ-9NAgbQ7daDCfFAyC-JwuA7kYF0IpQ_WbsajQ"/>
+<a href="product.html" class="absolute bottom-3 right-3 p-3 bg-secondary text-white rounded-full opacity-0 group-hover:opacity-100 transition-opacity shadow-lg inline-flex">
+<span class="material-symbols-outlined">add_shopping_cart</span>
+</a>
+</div>
+<div class="space-y-1">
+<p class="text-label-sm text-outline uppercase tracking-wider">Garden Care</p>
+<a href="product.html" class="font-headline-md text-primary truncate block">All-Purpose Potting Mix</a>
+<div class="flex items-center gap-1 text-on-tertiary-container mb-2">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="text-label-sm">4.8 (210 reviews)</span>
+</div>
+<p class="text-headline-md font-extrabold text-primary">$15.99</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Promotional Banner -->
+<section class="py-12 px-margin-mobile md:px-margin-desktop">
+<div class="max-w-container-max mx-auto relative rounded-xl overflow-hidden min-h-[300px] flex items-center p-8 md:p-16">
+<div class="absolute inset-0 z-0">
+<img alt="Garden Harvest" class="w-full h-full object-cover" data-alt="A lush, flourishing vegetable garden with vibrant green kale, bright red tomatoes on the vine, and sprawling zucchini leaves. Sunlight filters through the foliage, creating a dappled light effect. The atmosphere is wholesome and energetic, showcasing the results of a healthy farm harvest in a clean, high-saturation modern style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCedlcUoNoHoD8CGH4JJB-jsO2YpKtDFjNqFoIvig6nMAmALcc3ZpdO3O1LShuQH26BGgK5qCM25g717JUB9hzKwM6VVf5yhoP4A8SeB3ag5zw9vmLCdHQqhCR5TykS_SzrTGnYcKbAbx6iVmltlPpcZ6vxH3Q8vQufs8NfmRsKoOeLQijun6EcOTaoV8TDl3UoxiO-zI6hf5rlNWbOJ5dzJPY5Db4KlHGS588GswehjO4qK5xk6_OVxFWHuaXozzmZhJyCQaWjcU0"/>
+<div class="absolute inset-0 bg-gradient-to-r from-primary/90 via-primary/60 to-transparent"></div>
+</div>
+<div class="relative z-10 max-w-xl text-on-primary">
+<h2 class="font-headline-xl text-headline-xl mb-4">Healthy Farm, Better Harvest</h2>
+<p class="font-body-lg text-body-lg mb-8 opacity-90">Get up to 25% off on all organic fertilizers and soil amendments this week only. Give your crops the nutrients they deserve.</p>
+<a href="shop.html" class="squishy-button px-10 py-4 bg-secondary text-on-secondary rounded-full font-bold shadow-xl">
+                        Claim Your Discount
+                    </a>
+</div>
+</div>
+</section>
+<!-- Trust Section -->
+<section class="py-24 bg-surface-container-low">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 md:grid-cols-3 gap-12">
+<div class="flex flex-col items-center text-center space-y-4">
+<div class="w-16 h-16 rounded-full bg-primary-fixed flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-3xl">local_shipping</span>
+</div>
+<h4 class="font-headline-md text-primary">Regional Delivery</h4>
+<p class="text-on-surface-variant">We deliver straight to your farm within 48 hours for local orders.</p>
+</div>
+<div class="flex flex-col items-center text-center space-y-4">
+<div class="w-16 h-16 rounded-full bg-primary-fixed flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-3xl">verified_user</span>
+</div>
+<h4 class="font-headline-md text-primary">Farm-Tested Quality</h4>
+<p class="text-on-surface-variant">Every tool and feed variety is tested on our partner farms before listing.</p>
+</div>
+<div class="flex flex-col items-center text-center space-y-4">
+<div class="w-16 h-16 rounded-full bg-primary-fixed flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-3xl">support_agent</span>
+</div>
+<h4 class="font-headline-md text-primary">Expert Advice</h4>
+<p class="text-on-surface-variant">Our team of agricultural specialists is ready to help you grow your best.</p>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-primary pt-16 pb-16 md:pb-8">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-stack-lg px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="space-y-6">
+<a class="font-headline-lg text-headline-lg font-extrabold text-secondary-fixed" href="home.html">FARMVY</a>
+<p class="text-primary-fixed-dim/80 font-body-md">Your trusted partner in modern agriculture. Delivering quality supplies for farms of all sizes since 2024.</p>
+<div class="flex gap-3 mt-2">
+<a class="w-10 h-10 rounded-full border border-primary-fixed-dim/30 flex items-center justify-center text-primary-fixed-dim hover:bg-secondary hover:text-white transition-all" href="#" aria-label="Facebook"><svg fill="currentColor" viewBox="0 0 24 24" width="18" height="18"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+<a class="w-10 h-10 rounded-full border border-primary-fixed-dim/30 flex items-center justify-center text-primary-fixed-dim hover:bg-secondary hover:text-white transition-all" href="#" aria-label="Instagram"><svg fill="currentColor" viewBox="0 0 24 24" width="18" height="18"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></a>
+<a class="w-10 h-10 rounded-full border border-primary-fixed-dim/30 flex items-center justify-center text-primary-fixed-dim hover:bg-secondary hover:text-white transition-all" href="#" aria-label="TikTok"><svg fill="currentColor" viewBox="0 0 24 24" width="18" height="18"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg></a>
+<a class="w-10 h-10 rounded-full border border-primary-fixed-dim/30 flex items-center justify-center text-primary-fixed-dim hover:bg-secondary hover:text-white transition-all" href="#" aria-label="LinkedIn"><svg fill="currentColor" viewBox="0 0 24 24" width="18" height="18"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+</div>
+</div>
+<div class="space-y-4">
+<h5 class="text-white font-bold font-headline-md">Quick Links</h5>
+<ul class="space-y-2">
+<li><a class="text-primary-fixed-dim/80 hover:text-white transition-colors hover:translate-x-1 inline-block transition-transform duration-200" href="shop.html">Shop Catalog</a></li>
+<li><a class="text-primary-fixed-dim/80 hover:text-white transition-colors hover:translate-x-1 inline-block transition-transform duration-200" href="about.html">About Our Story</a></li>
+<li><a class="text-primary-fixed-dim/80 hover:text-white transition-colors hover:translate-x-1 inline-block transition-transform duration-200" href="#">Community Farm</a></li>
+<li><a class="text-primary-fixed-dim/80 hover:text-white transition-colors hover:translate-x-1 inline-block transition-transform duration-200" href="#">Special Offers</a></li>
+</ul>
+</div>
+<div class="space-y-4">
+<h5 class="text-white font-bold font-headline-md">Customer Care</h5>
+<ul class="space-y-2">
+<li><a class="text-primary-fixed-dim/80 hover:text-white transition-colors hover:translate-x-1 inline-block transition-transform duration-200" href="#">Shipping Info</a></li>
+<li><a class="text-primary-fixed-dim/80 hover:text-white transition-colors hover:translate-x-1 inline-block transition-transform duration-200" href="#">Returns</a></li>
+<li><a class="text-primary-fixed-dim/80 hover:text-white transition-colors hover:translate-x-1 inline-block transition-transform duration-200" href="#">Privacy Policy</a></li>
+<li><a class="text-primary-fixed-dim/80 hover:text-white transition-colors hover:translate-x-1 inline-block transition-transform duration-200" href="#">Terms of Service</a></li>
+</ul>
+</div>
+<div class="space-y-4">
+<h5 class="text-white font-bold font-headline-md">Newsletter</h5>
+<p class="text-primary-fixed-dim/80 font-label-sm">Get seasonal planting tips and exclusive deals delivered to your inbox.</p>
+<div class="flex bg-white/10 rounded-full p-1 border border-white/20">
+<input class="bg-transparent border-none focus:ring-0 text-white placeholder-white/50 px-4 w-full" placeholder="Your email" type="email"/>
+<button class="bg-secondary text-white px-6 py-2 rounded-full font-bold hover:bg-secondary-container hover:text-on-secondary-container transition-all">Join</button>
+</div>
+</div>
+</div>
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop mt-16 pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="font-label-sm text-label-sm text-primary-fixed-dim/60">© 2024 FARMVY Online Farm Store. Neighborly service since day one.</p>
+<div class="flex gap-6">
+<span class="material-symbols-outlined text-primary-fixed-dim/60">payments</span>
+<span class="material-symbols-outlined text-primary-fixed-dim/60">local_shipping</span>
+<span class="material-symbols-outlined text-primary-fixed-dim/60">verified</span>
+</div>
+</div>
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop mt-4 pt-4 border-t border-white/5 flex items-center justify-center gap-3">
+<img alt="Craft Idea's Studio Logo" class="h-7 md:h-9 w-auto object-contain" src="BOX LOGO VERSION 2.png"/>
+<p class="font-label-sm text-label-sm text-primary-fixed-dim/70">Made By: <a href="https://sites.google.com/view/craft-ideas-studio/home" target="_blank" rel="noopener noreferrer" class="text-secondary-fixed-dim hover:text-white transition-colors duration-300 border-b border-transparent hover:border-secondary-fixed-dim">Craft Idea's Studio</a></p>
+</div>
+</footer>
+<!-- Mobile Nav Bar (Responsive Pivot) -->
+<div class="md:hidden fixed bottom-0 left-0 w-full bg-white border-t border-surface-container-high z-50 flex justify-around py-3 px-2 shadow-[0_-4px_10px_rgba(0,0,0,0.05)]">
+<a class="flex flex-col items-center gap-1 text-secondary" href="home.html">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">home</span>
+<span class="text-[10px] font-bold">Home</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-on-surface-variant" href="shop.html">
+<span class="material-symbols-outlined">grid_view</span>
+<span class="text-[10px] font-semibold">Shop</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-on-surface-variant" href="product.html">
+<span class="material-symbols-outlined">inventory_2</span>
+<span class="text-[10px] font-semibold">Product</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-on-surface-variant" href="checkout.html">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">shopping_cart</span>
+<span class="text-[10px] font-semibold">Cart</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-on-surface-variant" href="about.html">
+<span class="material-symbols-outlined">info</span>
+<span class="text-[10px] font-semibold">About</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-on-surface-variant" href="contact.html">
+<span class="material-symbols-outlined">mail</span>
+<span class="text-[10px] font-semibold">Contact</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-on-surface-variant" href="prototype.html">
+<span class="material-symbols-outlined">description</span>
+<span class="text-[10px] font-semibold">Proto</span>
+</a>
+</div>
+<script src="common.js"></script>
+<script>
+        // Home page: logo pulse + scroll header shrink
+        const logo = document.querySelector('.tracking-tighter');
+        if (logo) {
+            logo.addEventListener('mouseenter', () => logo.classList.add('animate-pulse'));
+            logo.addEventListener('mouseleave', () => logo.classList.remove('animate-pulse'));
+        }
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (!header) return;
+            if (window.scrollY > 50) {
+                header.classList.add('h-16');
+                header.classList.remove('h-20');
+            } else {
+                header.classList.remove('h-16');
+                header.classList.add('h-20');
+            }
+        });
+    </script>
+</body></html>
